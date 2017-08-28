@@ -1,0 +1,4 @@
+C:\ExamenC\ClassExamen\bin\Debug\ClassExamen.dll
+C:\ExamenC\ClassExamen\bin\Debug\ClassExamen.pdb
+C:\ExamenC\ClassExamen\obj\Debug\ClassExamen.dll
+C:\ExamenC\ClassExamen\obj\Debug\ClassExamen.pdb

@@ -1,0 +1,7 @@
+C:\ExamenC\UnitTest\bin\Debug\UnitTest.dll
+C:\ExamenC\UnitTest\bin\Debug\UnitTest.pdb
+C:\ExamenC\UnitTest\obj\Debug\UnitTest.dll
+C:\ExamenC\UnitTest\obj\Debug\UnitTest.pdb
+C:\ExamenC\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
+C:\ExamenC\UnitTest\bin\Debug\ClassExamen.dll
+C:\ExamenC\UnitTest\bin\Debug\ClassExamen.pdb
