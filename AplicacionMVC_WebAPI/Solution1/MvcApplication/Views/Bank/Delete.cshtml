@@ -28,6 +28,9 @@
         @Html.DisplayFor(model => model.RegistrationDate)
     </div>
 </fieldset>
+<p style="color: red">
+    @ViewBag.Error
+</p>
 @using (Html.BeginForm())
 {
     <p>
