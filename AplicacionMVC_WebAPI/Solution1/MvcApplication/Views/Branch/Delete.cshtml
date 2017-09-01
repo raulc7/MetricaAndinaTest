@@ -21,12 +21,16 @@
         :
         @Html.DisplayFor(model => model.Address)
     </div>
+
     <div class="display-label">
         @Html.DisplayNameFor(model => model.BankName)
         :
         @Html.DisplayFor(model => model.BankName)
     </div>
 </fieldset>
+<p style="color: red">
+    @ViewBag.Error
+</p>
 @using (Html.BeginForm())
 {
     <p>

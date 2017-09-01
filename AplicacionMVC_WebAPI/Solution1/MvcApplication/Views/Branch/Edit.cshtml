@@ -34,7 +34,7 @@
             @Html.LabelFor(model => model.BankName)
         </div>
         <div class="editor-field">
-            @Html.DropDownList("Bank", new SelectList(ViewBag.Bank, "id", "name"), new { @class = "form-control" })
+            @Html.DropDownListFor(model => model.BankId, new SelectList(ViewBag.Bank, "id", "name"), new { @class = "form-control" })
         </div>
 
         <p>
