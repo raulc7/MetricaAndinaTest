@@ -24,10 +24,8 @@ namespace ClassExamen
                     if (ascii == 209) newAscii = 79;
                     if (ascii == 241) newAscii = 111;
 
-                    if (newAscii == 122)
-                    {
-                        newAscii = ascii;
-                    }
+                    if (ascii == 90) newAscii = 65;
+                    if (ascii == 122) newAscii = 97;
 
                     result[item.Index] = (char)newAscii;
                 }
