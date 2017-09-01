@@ -68,7 +68,6 @@ namespace MvcApplication.Controllers
             {
                 if (!ModelState.IsValid) return View(branch);
 
-                branch.BankId = Convert.ToInt32(collection["Bank"].ToString());
                 branchRep.UpdateBranch(branch);
                 return RedirectToAction("Index");
             }
@@ -97,9 +96,11 @@ namespace MvcApplication.Controllers
                 branchRep.DeleteBranch(branch.Id);
                 return RedirectToAction("Index");
             }
-            catch
+            catch (Exception ex)
             {
-                return View();
+                ViewBag.Error = ex.Message;
+                branch = branchRep.GetAllBranch(0).Find(x => x.Id == branch.Id);
+                return View(branch);
             }
         }
     }

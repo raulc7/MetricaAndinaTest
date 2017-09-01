@@ -115,9 +115,6 @@ namespace MvcApplication.Controllers
             {
                 if (!ModelState.IsValid) return View(paymentOrder);
 
-                paymentOrder.BranchId = Convert.ToInt32(collection["Branch"].ToString());
-                paymentOrder.CurrencyId = Convert.ToInt32(collection["Currency"].ToString());
-                paymentOrder.PaymentStateId = Convert.ToInt32(collection["PaymentState"].ToString());
                 paymentOrderRep.UpdatePaymentOrder(paymentOrder);
                 return RedirectToAction("Index");
             }

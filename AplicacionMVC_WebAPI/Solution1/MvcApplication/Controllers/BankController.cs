@@ -122,9 +122,11 @@ namespace MvcApplication.Controllers
                 bankRep.DeleteBank(bank.Id);
                 return RedirectToAction("Index");
             }
-            catch
+            catch (Exception ex)
             {
-                return View();
+                ViewBag.Error = ex.Message;
+                bank = bankRep.GetAllBank().Find(x => x.Id == bank.Id);
+                return View(bank);
             }
         }
 
