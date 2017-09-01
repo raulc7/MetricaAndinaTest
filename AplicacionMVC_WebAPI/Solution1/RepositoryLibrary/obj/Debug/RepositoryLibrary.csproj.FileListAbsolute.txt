@@ -1,0 +1,8 @@
+c:\users\cdt_rcarpio\documents\visual studio 2012\Projects\Solution1\RepositoryLibrary\obj\Debug\RepositoryLibrary.csprojResolveAssemblyReference.cache
+c:\users\cdt_rcarpio\documents\visual studio 2012\Projects\Solution1\RepositoryLibrary\bin\Debug\RepositoryLibrary.dll
+c:\users\cdt_rcarpio\documents\visual studio 2012\Projects\Solution1\RepositoryLibrary\bin\Debug\RepositoryLibrary.pdb
+c:\users\cdt_rcarpio\documents\visual studio 2012\Projects\Solution1\RepositoryLibrary\bin\Debug\BusinessEntity.dll
+c:\users\cdt_rcarpio\documents\visual studio 2012\Projects\Solution1\RepositoryLibrary\bin\Debug\BusinessEntity.pdb
+c:\users\cdt_rcarpio\documents\visual studio 2012\Projects\Solution1\RepositoryLibrary\obj\Debug\RepositoryLibrary.dll
+c:\users\cdt_rcarpio\documents\visual studio 2012\Projects\Solution1\RepositoryLibrary\obj\Debug\RepositoryLibrary.pdb
+c:\users\cdt_rcarpio\documents\visual studio 2012\Projects\Solution1\RepositoryLibrary\bin\Debug\RepositoryLibrary.dll.config

@@ -1,0 +1,52 @@
+﻿@model BusinessEntity.PaymentOrderBE
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Eliminar</h2>
+
+<h3>Estas seguro que deseas eliminar?</h3>
+<fieldset>
+    <legend>Orden de Pago</legend>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Amount)
+        :
+        @Html.DisplayFor(model => model.CurrencySymbol) 
+        @Html.DisplayFor(model => model.Amount)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.PaymentDate)
+        :
+        @Html.DisplayFor(model => model.PaymentDate)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.BranchName)
+        :
+        @Html.DisplayFor(model => model.BranchName)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.CurrencyName)
+        :
+        @Html.DisplayFor(model => model.CurrencyName) 
+        (@Html.DisplayFor(model => model.CurrencyIso))
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.PaymentStateName)
+        :
+        @Html.DisplayFor(model => model.PaymentStateName)
+    </div>
+</fieldset>
+@using (Html.BeginForm())
+{
+    <p>
+        <input type="submit" value="Eliminar" />
+        |
+        @Html.ActionLink("Regresar", "Index")
+    </p>
+}

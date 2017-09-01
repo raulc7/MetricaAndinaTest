@@ -1,0 +1,53 @@
+﻿@model IEnumerable<BusinessEntity.BranchBE>
+
+@{
+    ViewBag.Title = "GetBranchList";
+}
+
+<h2>Lista de Sucursales por Banco</h2>
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RegistrationDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BankName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RegistrationDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BankName)
+        </td>
+    </tr>
+}
+
+</table>
+
+<div>
+    @Html.ActionLink("Regresar", "Index")
+</div>

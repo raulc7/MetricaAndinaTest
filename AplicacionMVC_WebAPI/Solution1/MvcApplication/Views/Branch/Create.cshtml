@@ -1,0 +1,58 @@
+﻿@model BusinessEntity.BranchBE
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Nueva Sucursal</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Sucursal</legend>
+        
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Address)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Address)
+            @Html.ValidationMessageFor(model => model.Address)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RegistrationDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RegistrationDate)
+            @Html.ValidationMessageFor(model => model.RegistrationDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.BankName)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("Bank", new SelectList(ViewBag.Bank, "id", "name"), new { @class = "form-control" })
+        </div>
+
+        <p>
+            <input type="submit" value="Crear" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Regresar", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

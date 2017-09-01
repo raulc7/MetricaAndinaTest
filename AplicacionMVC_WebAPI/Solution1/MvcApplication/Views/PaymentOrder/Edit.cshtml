@@ -1,0 +1,58 @@
+﻿@model BusinessEntity.PaymentOrderBE
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Editar</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Orden de Pago</legend>
+
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Amount)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Amount)
+            @Html.ValidationMessageFor(model => model.Amount)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.BranchName)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("Branch", new SelectList(ViewBag.Branch, "id", "name"), new { @class = "form-control" })
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CurrencyName)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("Currency", new SelectList(ViewBag.Currency, "id", "name"), new { @class = "form-control" })
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PaymentStateName)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("PaymentState", new SelectList(ViewBag.PaymentState, "id", "name"), new { @class = "form-control" })
+        </div>
+
+        <p>
+            <input type="submit" value="Guardar" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Regresar", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
