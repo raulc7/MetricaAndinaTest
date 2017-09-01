@@ -26,21 +26,21 @@
             @Html.LabelFor(model => model.BranchName)
         </div>
         <div class="editor-field">
-            @Html.DropDownList("Branch", new SelectList(ViewBag.Branch, "id", "name"), new { @class = "form-control" })
+            @Html.DropDownListFor(model => model.BranchId, new SelectList(ViewBag.Branch, "id", "name"), new { @class = "form-control" })
         </div>
 
         <div class="editor-label">
             @Html.LabelFor(model => model.CurrencyName)
         </div>
         <div class="editor-field">
-            @Html.DropDownList("Currency", new SelectList(ViewBag.Currency, "id", "name"), new { @class = "form-control" })
+            @Html.DropDownListFor(model => model.CurrencyId, new SelectList(ViewBag.Currency, "id", "name"), new { @class = "form-control" })
         </div>
 
         <div class="editor-label">
             @Html.LabelFor(model => model.PaymentStateName)
         </div>
         <div class="editor-field">
-            @Html.DropDownList("PaymentState", new SelectList(ViewBag.PaymentState, "id", "name"), new { @class = "form-control" })
+            @Html.DropDownListFor(model => model.PaymentStateId, new SelectList(ViewBag.PaymentState, "id", "name"), new { @class = "form-control" })
         </div>
 
         <p>
